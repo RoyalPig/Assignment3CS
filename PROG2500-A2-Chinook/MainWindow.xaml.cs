@@ -25,5 +25,28 @@ namespace PROG2500_A2_Chinook
         {
             InitializeComponent();
         }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.HomePage());
+        }
+
+        private void TracksButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.TracksPage());
+
+        }
+
+        private void AlbumsButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.AlbumsPage());
+
+        }
+
+        private void ArtistsButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.ArtistsPage());
+
+        }
     }
 }

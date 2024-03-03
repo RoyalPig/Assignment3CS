@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\AlbumImage.png" />
+    <None Remove="images\ArtistImage.png" />
+    <None Remove="images\HomeImage.png" />
+    <None Remove="images\TracksImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\HomeImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.16">
       <PrivateAssets>all</PrivateAssets>
@@ -19,6 +30,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\AlbumImage.png" />
+    <Resource Include="images\ArtistImage.png" />
+    <Resource Include="images\TracksImage.png" />
   </ItemGroup>
 
 </Project>
