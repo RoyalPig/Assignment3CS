@@ -14,6 +14,11 @@
     <StackPanel>
         <TextBlock Text="This is the Tracks Page!" FontSize="48"></TextBlock>
         <DataGrid Height="200" ItemsSource="{Binding Source={StaticResource trackViewSource}}"
-                  AutoGenerateColumns="True" />
+                  AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" SortDirection="Ascending"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </StackPanel>
 </Page>

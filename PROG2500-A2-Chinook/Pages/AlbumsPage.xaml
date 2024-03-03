@@ -7,8 +7,20 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AlbumsPage">
+    <Page.Resources>
+        <CollectionViewSource x:Key="albumViewSource"></CollectionViewSource>
+    </Page.Resources>
 
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="This is the Albums Page!" FontSize="48"></TextBlock>
+        <ListView ItemsSource="{Binding Source={StaticResource albumViewSource}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" Style="{StaticResource listviewTitleStyling}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
 </Page>
