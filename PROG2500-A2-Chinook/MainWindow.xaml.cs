@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace PROG2500_A2_Chinook
 {
+    // scaffold-dbcontext "Data Source=MOBILEBOI;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;" Microsoft.EntityFrameworkCore.SqlServer -outputdir Models/Generated -contextdir Data -namespace PROG2500_A2_Chinook.Models -contextnamespace PROG2500_A2_Chinook.Data -force
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
