@@ -17,6 +17,8 @@
                   AutoGenerateColumns="False" >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" SortDirection="Ascending"/>
+                <DataGridTextColumn Binding="{Binding formattedPriceString}" Header="Price"/>
+
             </DataGrid.Columns>
         </DataGrid>
 
