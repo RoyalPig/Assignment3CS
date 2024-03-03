@@ -3,4 +3,7 @@ scaffold-dbcontext "Data Source=MOBILEBOI;Integrated Security=True;Connect Timeo
 
 C:\Users\Matt\.nuget\packages\microsoft.entityframeworkcore.sqlserver\7.0.16\
 
-scaffold-dbcontext "Data Source=MOBILEBOI;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;" Microsoft.EntityFrameworkCore.SqlServer -outputdir Models/Generated -contextdir Data -namespace PROG2500_A2_Chinook.Models -contextnamespace PROG2500_A2_Chinook.Data -force
+scaffold-dbcontext "Data Source=MOBILEBOI;Initial Catalog=Chinook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -outputdir Models/Generated -contextdir Data -namespace PROG2500_A2_Chinook.Models -contextnamespace PROG2500_A2_Chinook.Data -force
+
+
+Data Source=MOBILEBOI;Initial Catalog=Chinook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False
