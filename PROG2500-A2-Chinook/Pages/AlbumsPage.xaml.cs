@@ -24,6 +24,8 @@ namespace PROG2500_A2_Chinook.Pages
     {
         ChinookContext context = new ChinookContext();
         CollectionViewSource albumViewSource = new CollectionViewSource();
+        CollectionViewSource trackViewSource = new CollectionViewSource();
+
         public AlbumsPage()
         {
             InitializeComponent();
@@ -33,6 +35,12 @@ namespace PROG2500_A2_Chinook.Pages
             context.Albums.Load();
             // Set viewsource data to use data collection
             albumViewSource.Source = context.Albums.Local.ToObservableCollection();
+
+            trackViewSource = (CollectionViewSource)FindResource(nameof(trackViewSource));
+            // Use dbcontet to tell entity framework to load data from the db
+            context.Tracks.Load();
+            // Set viewsource data to use data collection
+            trackViewSource.Source = context.Tracks.Local.ToObservableCollection();
         }
     }
 }

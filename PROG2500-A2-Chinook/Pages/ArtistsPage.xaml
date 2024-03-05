@@ -13,9 +13,10 @@
 
     <StackPanel>
         <TextBlock Text="This is the Artists Page!" FontSize="48"></TextBlock>
-        <ListView ItemsSource="{Binding Source={StaticResource artistViewSource}}">
+        <ListView ItemsSource="{Binding Source={StaticResource artistViewSource}}" Height="300" Style="{StaticResource artistsViewStylying}">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ArtistId}"></GridViewColumn>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
                 </GridView>
             </ListView.View>

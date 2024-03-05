@@ -9,15 +9,25 @@
       Title="AlbumsPage">
     <Page.Resources>
         <CollectionViewSource x:Key="albumViewSource"></CollectionViewSource>
+        <CollectionViewSource x:Key="trackViewSource"></CollectionViewSource>
+
     </Page.Resources>
 
     <StackPanel>
         <TextBlock Text="This is the Albums Page!" FontSize="48"></TextBlock>
-        <ListView ItemsSource="{Binding Source={StaticResource albumViewSource}}">
+        <ListView ItemsSource="{Binding Source={StaticResource albumViewSource}}" Height="300">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding AlbumId}"></TextBlock>
                         <TextBlock Text="{Binding Title}" Style="{StaticResource listviewTitleStyling}"></TextBlock>
+                        <ItemsControl ItemsSource="{Binding Tracks}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}" Margin="10,0,0,0" Style="{StaticResource listviewTracksStyling}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

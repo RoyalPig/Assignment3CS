@@ -13,11 +13,14 @@
 
     <StackPanel>
         <TextBlock Text="This is the Tracks Page!" FontSize="48"></TextBlock>
-        <DataGrid Height="200" ItemsSource="{Binding Source={StaticResource trackViewSource}}"
-                  AutoGenerateColumns="False" >
+        <DataGrid Height="350" ItemsSource="{Binding Source={StaticResource trackViewSource}}" 
+                  AutoGenerateColumns="False" CellStyle="{StaticResource tracksViewStylying}">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" SortDirection="Ascending"/>
-                <DataGridTextColumn Binding="{Binding formattedPriceString}" Header="Price"/>
+                <DataGridTextColumn Binding="{Binding FormattedPriceString}" Header="Price"/>
+                <DataGridTextColumn Binding="{Binding Minutes}" Header="Legnth"/>
+                <DataGridTextColumn Binding="{Binding MegaBytes}" Header="Size"/>
+                <DataGridTextColumn Binding="{Binding Composer}" Header="Artists"/>
 
             </DataGrid.Columns>
         </DataGrid>

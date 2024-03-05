@@ -47,15 +47,35 @@
         <ToolBar DockPanel.Dock="Left">
             <StackPanel Orientation="Vertical" Width="50">
                 <Button x:Name="HomeButton" Click="HomeButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Home Page" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
                     <Image Source="{StaticResource homeImage}"></Image>
                 </Button>
                 <Button x:Name="TracksButton" Click="TracksButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Tracks Page" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
                     <Image Source="{StaticResource trackImage}"></Image>
                 </Button>
                 <Button x:Name="ArtistsButton" Click="ArtistsButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Artists Page" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
                     <Image Source="{StaticResource artistImage}"></Image>
                 </Button>
                 <Button x:Name="AlbumsButton" Click="AlbumsButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Albums Page" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
                     <Image Source="{StaticResource albumImage}"></Image>
                 </Button>
 

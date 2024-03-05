@@ -5,12 +5,25 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="34"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
         </Style>
         <Style x:Key="listviewTitleStyling" TargetType="TextBlock">
             <Setter Property="FontSize" Value="24"></Setter>
             <Setter Property="FontWeight" Value="ExtraBold"></Setter>
             <Setter Property="Background" Value="Blue"></Setter>
         </Style>
+        <Style x:Key="listviewTracksStyling" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="Background" Value="Red"></Setter>
+        </Style>
+        <Style x:Key="artistsViewStylying" TargetType="ListView">
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="Background" Value="Green"></Setter>
+        </Style>
+        <Style x:Key="tracksViewStylying" TargetType="DataGridCell">
+            <Setter Property="Background" Value="Purple"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
+
+
