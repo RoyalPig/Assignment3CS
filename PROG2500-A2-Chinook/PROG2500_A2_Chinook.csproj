@@ -12,6 +12,8 @@
     <None Remove="images\AlbumImage.png" />
     <None Remove="images\ArtistImage.png" />
     <None Remove="images\HomeImage.png" />
+    <None Remove="images\JhonTravolta.jpg" />
+    <None Remove="images\john-travolta.gif" />
     <None Remove="images\TracksImage.png" />
   </ItemGroup>
 
@@ -30,11 +32,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="images\AlbumImage.png" />
     <Resource Include="images\ArtistImage.png" />
+    <Resource Include="images\JhonTravolta.jpg" />
+    <Resource Include="images\john-travolta.gif" />
     <Resource Include="images\TracksImage.png" />
   </ItemGroup>
 
