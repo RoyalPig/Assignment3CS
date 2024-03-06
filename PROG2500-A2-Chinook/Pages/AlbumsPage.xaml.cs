@@ -26,6 +26,7 @@ namespace PROG2500_A2_Chinook.Pages
         CollectionViewSource albumViewSource = new CollectionViewSource();
         CollectionViewSource trackViewSource = new CollectionViewSource();
 
+
         public AlbumsPage()
         {
             InitializeComponent();
@@ -41,6 +42,7 @@ namespace PROG2500_A2_Chinook.Pages
             context.Tracks.Load();
             // Set viewsource data to use data collection
             trackViewSource.Source = context.Tracks.Local.ToObservableCollection();
+
         }
     }
 }

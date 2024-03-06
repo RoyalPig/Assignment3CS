@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:PROG2500_A2_Chinook"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style x:Key="mainFrameStyle" TargetType="Frame">
+            <Setter Property="Background" Value="lightblue"></Setter>
+        </Style>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="24"></Setter>
         </Style>
@@ -21,6 +24,9 @@
             <Setter Property="Background" Value="Green"></Setter>
         </Style>
         <Style x:Key="tracksViewStylying" TargetType="DataGridCell">
+            <Setter Property="Background" Value="Purple"></Setter>
+        </Style>
+        <Style x:Key="listviewArtistsStyling" TargetType="DataGridCell">
             <Setter Property="Background" Value="Purple"></Setter>
         </Style>
     </Application.Resources>

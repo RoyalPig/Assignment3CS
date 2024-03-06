@@ -81,7 +81,7 @@
 
             </StackPanel>
         </ToolBar>
-        <Frame x:Name="mainFrame" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden" DockPanel.Dock="Bottom">
+        <Frame x:Name="mainFrame" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden" DockPanel.Dock="Bottom" Style="{StaticResource mainFrameStyle}">
         </Frame>
     </DockPanel>
 </Window>
