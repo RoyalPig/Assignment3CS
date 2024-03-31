@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace PROG2500_A2_Chinook
+namespace PROG2500_A3_LINQ
 {
     /// <summary>
     /// Interaction logic for App.xaml

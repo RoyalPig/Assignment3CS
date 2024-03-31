@@ -13,9 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PROG2500_A2_Chinook
+namespace PROG2500_A3_LINQ
 {
-    // scaffold-dbcontext "Data Source=MOBILEBOI;Initial Catalog=Chinook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -outputdir Models/Generated -contextdir Data -namespace PROG2500_A2_Chinook.Models -contextnamespace PROG2500_A2_Chinook.Data -force
+    // scaffold-dbcontext "Data Source=MOBILEBOI;Initial Catalog=Chinook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False" Microsoft.EntityFrameworkCore.SqlServer -outputdir Models/Generated -contextdir Data -namespace PROG2500_A3_LINQ.Models -contextnamespace PROG2500_A3_LINQ.Data -force
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

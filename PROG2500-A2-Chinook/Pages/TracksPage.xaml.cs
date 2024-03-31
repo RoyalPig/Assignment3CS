@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PROG2500_A2_Chinook.Data;
+using PROG2500_A3_LINQ.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PROG2500_A2_Chinook.Pages
+namespace PROG2500_A3_LINQ.Pages
 {
     /// <summary>
     /// Interaction logic for TracksPage.xaml

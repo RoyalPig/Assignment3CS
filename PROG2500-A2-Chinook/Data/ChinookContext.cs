@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using PROG2500_A2_Chinook.Models;
+using PROG2500_A3_LINQ.Models;
 using System.Configuration;
-namespace PROG2500_A2_Chinook.Data;
+namespace PROG2500_A3_LINQ.Data;
 
 public partial class ChinookContext : DbContext
 {

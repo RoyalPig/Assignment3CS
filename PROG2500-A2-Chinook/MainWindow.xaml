@@ -1,9 +1,9 @@
-﻿<Window x:Class="PROG2500_A2_Chinook.MainWindow"
+﻿<Window x:Class="PROG2500_A3_LINQ.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PROG2500_A2_Chinook"
+        xmlns:local="clr-namespace:PROG2500_A3_LINQ"
         mc:Ignorable="d"
         Title="Chinook Music Store" Height="650" Width="900">
 

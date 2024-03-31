@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PROG2500_A2_Chinook.Pages
+namespace PROG2500_A3_LINQ.Pages
 {
     /// <summary>
     /// Interaction logic for HomePage.xaml
