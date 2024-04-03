@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace PROG2500_A3_LINQ.Pages
 {
-    /// <summary>
-    /// Interaction logic for HomePage.xaml
-    /// </summary>
     public partial class HomePage : Page
     {
         public HomePage()

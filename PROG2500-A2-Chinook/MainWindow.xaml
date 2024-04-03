@@ -13,12 +13,17 @@
             <BitmapImage x:Key="trackImage" UriSource="/images/TracksImage.png"></BitmapImage>
             <BitmapImage x:Key="artistImage" UriSource="/images/ArtistImage.png"></BitmapImage>
             <BitmapImage x:Key="albumImage" UriSource="/images/AlbumImage.png"></BitmapImage>
+            <BitmapImage x:Key="musicCatalogImage" UriSource="/images/MusicCatalogImage.png"></BitmapImage>
+            <!--https://icons8.com/icon/mpeojql23sni/music-->
+            <BitmapImage x:Key="customerOrderButtonImage" UriSource="/images/CustomerOrderImage.png"></BitmapImage>
+            <!--https://icons8.com/icon/7979/purchase-order-->
+
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Header="_Exit"></MenuItem>
+                <MenuItem Header="_Exit" Click="ExitButton_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="Pages">
                 <MenuItem Header="_Home" Click="HomeButton_Click">
@@ -39,6 +44,16 @@
                 <MenuItem Header="_Albums" Click="AlbumsButton_Click">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource albumImage}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Music Catalog" Click="MusicCatalogButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource musicCatalogImage}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Customer Order" Click="CustomerOrderButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource customerOrderButtonImage}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
 
@@ -77,6 +92,22 @@
                         </ToolTip>
                     </Button.ToolTip>
                     <Image Source="{StaticResource albumImage}"></Image>
+                </Button>
+                <Button x:Name="MusicCatalogButton" Click="MusicCatalogButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Music Catalog" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
+                    <Image Source="{StaticResource musicCatalogImage}"></Image>
+                </Button>
+                <Button x:Name="CustomerOrderButton" Click="CustomerOrderButton_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Customer Orders" FontSize="12"/>
+                        </ToolTip>
+                    </Button.ToolTip>
+                    <Image Source="{StaticResource customerOrderButtonImage}"></Image>
                 </Button>
 
             </StackPanel>

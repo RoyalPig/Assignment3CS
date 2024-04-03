@@ -11,13 +11,16 @@
   <ItemGroup>
     <None Remove="images\AlbumImage.png" />
     <None Remove="images\ArtistImage.png" />
+    <None Remove="images\CustomerOrderImage.png" />
     <None Remove="images\HomeImage.png" />
     <None Remove="images\JhonTravolta.jpg" />
     <None Remove="images\john-travolta.gif" />
+    <None Remove="images\MusicCatalogImage.png" />
     <None Remove="images\TracksImage.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\CustomerOrderImage.png" />
     <Resource Include="images\HomeImage.png" />
   </ItemGroup>
 
@@ -40,6 +43,7 @@
     <Resource Include="images\ArtistImage.png" />
     <Resource Include="images\JhonTravolta.jpg" />
     <Resource Include="images\john-travolta.gif" />
+    <Resource Include="images\MusicCatalogImage.png" />
     <Resource Include="images\TracksImage.png" />
   </ItemGroup>
 

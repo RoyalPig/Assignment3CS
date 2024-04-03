@@ -8,22 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TracksPage">
     <Page.Resources>
-        <CollectionViewSource x:Key="trackViewSource"></CollectionViewSource>
+        <CollectionViewSource x:Key="trackViewSource"/>
     </Page.Resources>
 
     <StackPanel>
-        <TextBlock Text="This is the Tracks Page!" FontSize="48"></TextBlock>
+        <TextBlock Text="This is the Tracks Page!" FontSize="48" Margin="10"></TextBlock>
+        <TextBox x:Name="TrackSearchTextBox" 
+                 Height="30" 
+                 Margin="10" 
+                 Text="Search tracks..." 
+                 TextChanged="TrackSearchTextBox_TextChanged"/>
         <DataGrid Height="350" ItemsSource="{Binding Source={StaticResource trackViewSource}}" 
-                  AutoGenerateColumns="False" CellStyle="{StaticResource tracksViewStylying}">
+                  AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" SortDirection="Ascending"/>
                 <DataGridTextColumn Binding="{Binding FormattedPriceString}" Header="Price"/>
-                <DataGridTextColumn Binding="{Binding Minutes}" Header="Legnth"/>
+                <DataGridTextColumn Binding="{Binding Minutes}" Header="Length"/>
                 <DataGridTextColumn Binding="{Binding MegaBytes}" Header="Size"/>
                 <DataGridTextColumn Binding="{Binding Composer}" Header="Artists"/>
-
             </DataGrid.Columns>
         </DataGrid>
-
     </StackPanel>
 </Page>

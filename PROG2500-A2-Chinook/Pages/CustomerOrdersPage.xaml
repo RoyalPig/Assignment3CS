@@ -1,0 +1,66 @@
+﻿<Page x:Class="PROG2500_A3_LINQ.Pages.CustomerOrdersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Customer Orders">
+    
+    <Page.Resources>
+        <Style TargetType="Expander">
+            <Setter Property="Background" Value="#E8E8E8" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="Margin" Value="2" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="StackPanel">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <CollectionViewSource x:Key="customersViewSource" />
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="This is the Customer Orders Page!" FontSize="48" Margin="10" />
+
+        <TextBox x:Name="CustomerOrdersSearchbox" Grid.Row="1" Margin="5" Text="Search for a customer..." TextChanged="CustomerOrdersSearchBox_TextChanged" />
+
+        <ListView x:Name="CustomersListView" Grid.Row="2" Margin="5">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Expander Header="{Binding FullName}" IsExpanded="False">
+                        <StackPanel>
+                            <TextBlock Text="{Binding Address}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Country}" FontStyle="Italic" />
+                            <TextBlock Text="{Binding Email}" Foreground="Blue" />
+                            <ListView ItemsSource="{Binding Invoices}" BorderThickness="0">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Expander Header="Invoice Details" IsExpanded="False">
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding InvoiceDate}" />
+                                                <TextBlock Text="{Binding Total, StringFormat='Total: {0:C}'}" />
+                                                <TextBlock Text="{Binding InvoiceLines.Count, StringFormat='Tracks: {0}'}" />
+                                            </StackPanel>
+                                        </Expander>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackPanel>
+                    </Expander>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

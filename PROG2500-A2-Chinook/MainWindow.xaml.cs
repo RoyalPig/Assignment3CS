@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROG2500_A3_LINQ.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,18 @@ namespace PROG2500_A3_LINQ
         {
             mainFrame.NavigationService.Navigate(new Pages.ArtistsPage());
 
+        }
+        private void MusicCatalogButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.MusicCatalogPage());
+        }
+        private void CustomerOrderButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(new Pages.CustomerOrdersPage());
+        }
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
